@@ -1,13 +1,11 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {theme} from '../theme';
 
 function Button({text, onPress}) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.button}>
-      <View>
-        <Text style={styles.text}>{text}</Text>
-      </View>
+      <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
   );
 }
